@@ -28,24 +28,22 @@ html_home = """
     background: linear-gradient(135deg, #4b6cb7, #182848);
     padding: 20px;
     border-radius: 15px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
 ">
+    <span style="font-size: 2.5em;">🚗</span>
     <h1 style="
-        color: #ffffff;
+        color: white;
         font-family: 'Trebuchet MS', sans-serif;
         font-size: 2.5em;
-        margin-bottom: 10px;
+        margin: 0;
+        white-space: nowrap;
     ">
-        🚗 Car Price Prediction App
+        Car Price Prediction
     </h1>
-    <h4 style="
-        color: #f0f0f0;
-        font-family: 'Arial', sans-serif;
-        font-weight: 300;
-    ">
-        Made for: Automotive Market Analysis
-    </h4>
 </div>
 """
 
