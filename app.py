@@ -74,6 +74,9 @@ def run_car_price_app():
                          'Hybrid_Variator', 'Petrol_Manual', 'LPG_Automatic', 'Diesel_Manual']
     doors_category_options = ['4-5', '2-3']
 
+    # Premium brand list
+    premium_brands = ['BMW', 'MERCEDES-BENZ', 'AUDI', 'LEXUS']
+
     # Numeric input
     for col in num_cols:
         if col == "Levy":
@@ -91,15 +94,26 @@ def run_car_price_app():
         elif col == "Model_encoded":
             selected_model = st.selectbox("Model", model_options)
             user_input[col] = model_price_mean.get(selected_model, 0)
-        elif col in ["Right_hand_drive", "Leather interior", "is_premium"]:
+        elif col in ["Right_hand_drive", "Leather interior"]:
             user_input[col] = st.selectbox(col, ["Yes", "No"])
+        elif col == "is_premium":
+            # Nanti otomatis diisi, skip input manual
+            continue
         else:
             user_input[col] = st.number_input(col, min_value=0, value=1, step=1)
 
     # Categorical input
     for col in cat_cols:
         if col == "Manufacturer":
-            user_input[col] = st.selectbox(col, manufacturer_options)
+            chosen_manufacturer = st.selectbox(col, manufacturer_options)
+            user_input[col] = chosen_manufacturer
+            # Set is_premium otomatis
+            user_input["is_premium"] = 1 if chosen_manufacturer in premium_brands else 0
+            # Info ke user
+            if user_input["is_premium"] == 1:
+                st.success("✅ Manufacturer premium terdeteksi.")
+            else:
+                st.info("ℹ️ Manufacturer non-premium.")
         elif col == "Category":
             user_input[col] = st.selectbox(col, category_options)
         elif col == "Drive wheels":
@@ -115,15 +129,13 @@ def run_car_price_app():
     input_df = pd.DataFrame([user_input])
 
     # Map Yes/No ke 1/0
-    for col in ["Right_hand_drive", "Leather interior", "is_premium"]:
+    for col in ["Right_hand_drive", "Leather interior"]:
         if col in input_df.columns:
             input_df[col] = input_df[col].map(yes_no_map)
 
     # Pastikan tipe data sesuai
     for col in num_cols:
-        if col in input_df.columns and col != "volume_per_cylinder":
-            input_df[col] = input_df[col].astype(float)
-        elif col == "volume_per_cylinder":
+        if col in input_df.columns:
             input_df[col] = input_df[col].astype(float)
 
     input_df = input_df.reindex(columns=expected_cols)
