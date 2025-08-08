@@ -26,14 +26,14 @@ else:
 html_home = """
 <div style="
     background: linear-gradient(135deg, #4b6cb7, #182848);
-    padding: 20px 40px; /* Tambah padding samping */
+    padding: 20px 40px;
     border-radius: 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    min-width: 450px; /* Lebar minimum biar nggak kepotong */
     box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    max-width: 100%;
 ">
     <span style="font-size: 2.5em;">🚗</span>
     <h1 style="
