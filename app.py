@@ -5,57 +5,14 @@ import numpy as np
 import joblib
 import json
 
-# ===== CONFIGURASI HALAMAN =====
-st.set_page_config(
-    page_title="Car Price Prediction",
-    page_icon="🚗",
-    layout="centered"
-)
-
-# ===== CSS CUSTOM STYLING =====
-st.markdown("""
-<style>
-:root {
-    --primary-color: #007ACC;
-    --text-main: #222222;
-    --text-secondary: #555555;
-    --frame-color: #CCCCCC;
-}
-
-h1, h2, h3 {
-    color: var(--primary-color);
-    font-weight: 700;
-}
-p, li {
-    color: var(--text-main);
-    font-size: 16px;
-}
-.box {
-    border: 1px solid var(--frame-color);
-    border-radius: 8px;
-    padding: 16px;
-    background-color: rgba(245, 245, 245, 0.6);
-}
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-.desc {
-    color: var(--text-secondary);
-    font-size: 14px;
-}
-</style>
-""", unsafe_allow_html=True)
-
 # ===== Load Model & Mapping =====
 model = joblib.load('best_model_LightGBM.pkl')
 
+# Mapping Model_encoded dari file JSON
 with open("model_price_mean.json", "r") as f:
     model_price_mean = pd.Series(json.load(f))
 
+# Cek preprocessing
 if hasattr(model, 'named_steps') and 'preprocessor' in model.named_steps:
     preprocessor = model.named_steps['preprocessor']
     expected_cols = preprocessor.feature_names_in_
@@ -87,31 +44,18 @@ html_home = """
 """
 
 desc_home = """
-<div class="box">
-<h3>📜 Tentang Aplikasi</h3>
-<p class="desc">
-Aplikasi ini digunakan untuk memprediksi harga mobil berdasarkan fitur-fitur yang Anda masukkan.
-Model yang digunakan adalah <b>LightGBM</b> dengan preprocessing otomatis yang sudah dilatih pada dataset Kaggle.
-</p>
-</div>
+### Tentang Aplikasi  
+Aplikasi ini digunakan untuk memprediksi harga mobil berdasarkan fitur-fitur yang Anda masukkan.  
+Model yang digunakan adalah **LightGBM** dengan preprocessing otomatis yang sudah dilatih pada dataset Kaggle.  
 
-<div class="box">
-<h3>📂 Data Source</h3>
-<p>
-<a href="https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge" target="_blank">
-Kaggle - Car Price Prediction Challenge
-</a>
-</p>
-</div>
+#### Data Source  
+[Kaggle - Car Price Prediction Challenge](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge)
 
-<div class="box">
-<h3>⚙️ Cara Menggunakan</h3>
-<ol>
-<li>Buka menu <i>Car Price Prediction</i> di sidebar.</li>
-<li>Isi semua form sesuai detail mobil Anda.</li>
-<li>Klik tombol <b>Predict Price</b> untuk melihat estimasi harga mobil.</li>
-</ol>
-</div>
+---
+**Cara Menggunakan:**
+1. Buka menu *Car Price Prediction* di sidebar.  
+2. Isi semua form sesuai detail mobil Anda.  
+3. Klik tombol **Predict Price** untuk melihat estimasi harga mobil.
 """
 
 # ===== Form Car Price Prediction =====
@@ -130,6 +74,7 @@ def run_car_price_app():
                          'Hybrid_Variator', 'Petrol_Manual', 'LPG_Automatic', 'Diesel_Manual']
     doors_category_options = ['4-5', '2-3']
 
+    # Numeric input
     for col in num_cols:
         if col == "Levy":
             user_input[col] = st.number_input(col, min_value=0, value=1000, step=100)
@@ -151,6 +96,7 @@ def run_car_price_app():
         else:
             user_input[col] = st.number_input(col, min_value=0, value=1, step=1)
 
+    # Categorical input
     for col in cat_cols:
         if col == "Manufacturer":
             user_input[col] = st.selectbox(col, manufacturer_options)
@@ -165,12 +111,15 @@ def run_car_price_app():
         elif col not in user_input:
             user_input[col] = st.text_input(col, value="Unknown")
 
+    # Convert ke DataFrame
     input_df = pd.DataFrame([user_input])
 
+    # Map Yes/No ke 1/0
     for col in ["Right_hand_drive", "Leather interior", "is_premium"]:
         if col in input_df.columns:
             input_df[col] = input_df[col].map(yes_no_map)
 
+    # Pastikan tipe data sesuai
     for col in num_cols:
         if col in input_df.columns and col != "volume_per_cylinder":
             input_df[col] = input_df[col].astype(float)
@@ -179,6 +128,7 @@ def run_car_price_app():
 
     input_df = input_df.reindex(columns=expected_cols)
 
+    # Predict
     if st.button("🔮 Predict Price"):
         try:
             log_prediction = model.predict(input_df)[0]
