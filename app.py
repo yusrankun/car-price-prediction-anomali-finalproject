@@ -8,11 +8,9 @@ import json
 # ===== Load Model & Mapping =====
 model = joblib.load('best_model_LightGBM.pkl')
 
-# Mapping Model_encoded dari file JSON
 with open("model_price_mean.json", "r") as f:
     model_price_mean = pd.Series(json.load(f))
 
-# Cek preprocessing
 if hasattr(model, 'named_steps') and 'preprocessor' in model.named_steps:
     preprocessor = model.named_steps['preprocessor']
     expected_cols = preprocessor.feature_names_in_
@@ -21,6 +19,14 @@ if hasattr(model, 'named_steps') and 'preprocessor' in model.named_steps:
 else:
     st.error("Model pipeline tidak mengandung preprocessing. Simpan ulang model dengan preprocessing.")
     st.stop()
+
+# ===== Load CSV terpisah premium dan non-premium =====
+df_premium = pd.read_csv('premium_models_summary.csv')      # is_premium harus 1 di sini
+df_non_premium = pd.read_csv('non_premium_models_summary.csv')  # is_premium harus 0 di sini
+
+df_all = pd.concat([df_premium, df_non_premium], ignore_index=True)
+
+premium_map = dict(zip(df_all['Model'], df_all['is_premium']))
 
 # ===== Halaman Home =====
 html_home = """
@@ -74,9 +80,6 @@ def run_car_price_app():
                          'Hybrid_Variator', 'Petrol_Manual', 'LPG_Automatic', 'Diesel_Manual']
     doors_category_options = ['4-5', '2-3']
 
-    # Premium brand list
-    premium_brands = ['BMW', 'MERCEDES-BENZ', 'AUDI', 'LEXUS']
-
     # Numeric input
     for col in num_cols:
         if col == "Levy":
@@ -94,11 +97,17 @@ def run_car_price_app():
         elif col == "Model_encoded":
             selected_model = st.selectbox("Model", model_options)
             user_input[col] = model_price_mean.get(selected_model, 0)
+            # Set is_premium dari CSV
+            user_input["is_premium"] = premium_map.get(selected_model, 0)
+            # Info ke user
+            if user_input["is_premium"] == 1:
+                st.success("✅ Model premium terdeteksi.")
+            else:
+                st.info("ℹ️ Model non-premium.")
         elif col in ["Right_hand_drive", "Leather interior"]:
             user_input[col] = st.selectbox(col, ["Yes", "No"])
         elif col == "is_premium":
-            # Nanti otomatis diisi, skip input manual
-            continue
+            continue  # otomatis diisi
         else:
             user_input[col] = st.number_input(col, min_value=0, value=1, step=1)
 
@@ -107,13 +116,6 @@ def run_car_price_app():
         if col == "Manufacturer":
             chosen_manufacturer = st.selectbox(col, manufacturer_options)
             user_input[col] = chosen_manufacturer
-            # Set is_premium otomatis
-            user_input["is_premium"] = 1 if chosen_manufacturer in premium_brands else 0
-            # Info ke user
-            if user_input["is_premium"] == 1:
-                st.success("✅ Manufacturer premium terdeteksi.")
-            else:
-                st.info("ℹ️ Manufacturer non-premium.")
         elif col == "Category":
             user_input[col] = st.selectbox(col, category_options)
         elif col == "Drive wheels":
@@ -125,19 +127,18 @@ def run_car_price_app():
         elif col not in user_input:
             user_input[col] = st.text_input(col, value="Unknown")
 
-    # Convert ke DataFrame
-    input_df = pd.DataFrame([user_input])
-
     # Map Yes/No ke 1/0
     for col in ["Right_hand_drive", "Leather interior"]:
-        if col in input_df.columns:
-            input_df[col] = input_df[col].map(yes_no_map)
+        if col in user_input:
+            user_input[col] = yes_no_map.get(user_input[col], 0)
 
     # Pastikan tipe data sesuai
     for col in num_cols:
-        if col in input_df.columns:
-            input_df[col] = input_df[col].astype(float)
+        if col in user_input:
+            user_input[col] = float(user_input[col])
 
+    # Convert ke DataFrame dan urutkan kolom sesuai expected_cols
+    input_df = pd.DataFrame([user_input])
     input_df = input_df.reindex(columns=expected_cols)
 
     # Predict
