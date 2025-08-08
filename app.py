@@ -21,8 +21,8 @@ else:
     st.stop()
 
 # ===== Load Excel terpisah premium dan non-premium =====
-df_premium = pd.read_excel('premium_models_summary.xls')      # is_premium harus 1 di sini
-df_non_premium = pd.read_excel('non_premium_models_summary.xls')  # is_premium harus 0 di sini
+df_premium = pd.read_excel('premium_models_summary.xlsx')     # is_premium harus 1 di sini
+df_non_premium = pd.read_excel('non_premium_models_summary.xlsx')  # is_premium harus 0 di sini
 
 df_all = pd.concat([df_premium, df_non_premium], ignore_index=True)
 
