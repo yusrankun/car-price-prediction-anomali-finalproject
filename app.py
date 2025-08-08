@@ -20,10 +20,9 @@ else:
     st.error("Model pipeline tidak mengandung preprocessing. Simpan ulang model dengan preprocessing.")
     st.stop()
 
-# ===== Load CSV terpisah premium dan non-premium =====
-df_premium = pd.read_csv('premium_models_summary.csv')      # is_premium harus 1 di sini
-df_non_premium = pd.read_csv('non_premium_models_summary.csv')  # is_premium harus 0 di sini
-
+# ===== Load CSV premium & non-premium =====
+df_premium = pd.read_csv('premium_models_summary.csv')      # is_premium harus 1
+df_non_premium = pd.read_csv('non_premium_models_summary.csv')  # is_premium harus 0
 df_all = pd.concat([df_premium, df_non_premium], ignore_index=True)
 
 premium_map = dict(zip(df_all['Model'], df_all['is_premium']))
@@ -58,20 +57,29 @@ Model yang digunakan adalah **LightGBM** dengan preprocessing otomatis yang suda
 [Kaggle - Car Price Prediction Challenge](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge)
 
 ---
+
+### 📂 Link Data Model Premium & Non-Premium  
+Untuk menghindari kekacauan input data, silakan cek file **Model Premium** dan **Model Non-Premium** di Google Drive ini:  
+[Google Drive Link](https://drive.google.com/drive/folders/1GhgCh04aUWoTmnR9XIF7AppsPxGN7tyN?usp=sharing)  
+
+Gunakan file tersebut sebagai referensi agar input Model bisa tepat dan prediksi lebih akurat.
+
+---
+
 **Cara Menggunakan:**
 1. Buka menu *Car Price Prediction* di sidebar.  
 2. Isi semua form sesuai detail mobil Anda.  
 3. Klik tombol **Predict Price** untuk melihat estimasi harga mobil.
 """
 
-# ===== Form Car Price Prediction =====
 def run_car_price_app():
     st.subheader("Masukkan Detail Mobil")
     user_input = {}
     yes_no_map = {"Yes": 1, "No": 0}
 
-    manufacturer_options = ['LEXUS', 'CHEVROLET', 'HONDA', 'FORD', 'HYUNDAI', 'TOYOTA', 'MERCEDES-BENZ',
-                            'OPEL', 'Rare', 'BMW', 'AUDI', 'NISSAN', 'SUBARU', 'KIA', 'MITSUBISHI', 'SSANGYONG', 'VOLKSWAGEN']
+    manufacturer_options = ['LEXUS', 'CHEVROLET', 'HONDA', 'FORD', 'HYUNDAI', 'TOYOTA',
+                            'MERCEDES-BENZ', 'OPEL', 'Rare', 'BMW', 'AUDI', 'NISSAN',
+                            'SUBARU', 'KIA', 'MITSUBISHI', 'SSANGYONG', 'VOLKSWAGEN']
     model_options = list(model_price_mean.index)
     category_options = ['Jeep', 'Hatchback', 'Sedan', 'Rare', 'Universal', 'Coupe', 'Minivan']
     drive_wheels_options = ['4x4', 'Front', 'Rear']
@@ -80,8 +88,31 @@ def run_car_price_app():
                          'Hybrid_Variator', 'Petrol_Manual', 'LPG_Automatic', 'Diesel_Manual']
     doors_category_options = ['4-5', '2-3']
 
-    # Numeric input
+    premium_brands = ['BMW', 'MERCEDES-BENZ', 'AUDI', 'LEXUS']
+
+    chosen_manufacturer = st.selectbox("Manufacturer", manufacturer_options)
+    user_input["Manufacturer"] = chosen_manufacturer
+
+    selected_model = st.selectbox("Model", model_options)
+    user_input["Model_encoded"] = model_price_mean.get(selected_model, 0)
+    user_input["Model"] = selected_model
+
+    is_premium_manufacturer = int(chosen_manufacturer in premium_brands)
+    is_premium_model = premium_map.get(selected_model, None)
+
+    if is_premium_model is not None:
+        user_input["is_premium"] = is_premium_model
+    else:
+        user_input["is_premium"] = is_premium_manufacturer
+
+    if user_input["is_premium"] == 1:
+        st.success("✅ Mobil terdeteksi sebagai premium (berdasarkan Model atau Manufacturer).")
+    else:
+        st.info("ℹ️ Mobil non-premium.")
+
     for col in num_cols:
+        if col in ["Model_encoded", "is_premium"]:
+            continue
         if col == "Levy":
             user_input[col] = st.number_input(col, min_value=0, value=1000, step=100)
         elif col == "Mileage":
@@ -94,28 +125,16 @@ def run_car_price_app():
             user_input[col] = st.number_input(col, min_value=0.5, value=2.0, step=0.1, format="%.1f")
         elif col == "car_age":
             user_input[col] = st.number_input(col, min_value=0, value=5, step=1)
-        elif col == "Model_encoded":
-            selected_model = st.selectbox("Model", model_options)
-            user_input[col] = model_price_mean.get(selected_model, 0)
-            # Set is_premium dari CSV
-            user_input["is_premium"] = premium_map.get(selected_model, 0)
-            # Info ke user
-            if user_input["is_premium"] == 1:
-                st.success("✅ Model premium terdeteksi.")
-            else:
-                st.info("ℹ️ Model non-premium.")
         elif col in ["Right_hand_drive", "Leather interior"]:
-            user_input[col] = st.selectbox(col, ["Yes", "No"])
-        elif col == "is_premium":
-            continue  # otomatis diisi
+            pass
         else:
             user_input[col] = st.number_input(col, min_value=0, value=1, step=1)
 
-    # Categorical input
     for col in cat_cols:
-        if col == "Manufacturer":
-            chosen_manufacturer = st.selectbox(col, manufacturer_options)
-            user_input[col] = chosen_manufacturer
+        if col in ["Manufacturer", "Model", "is_premium"]:
+            continue
+        if col in ["Right_hand_drive", "Leather interior"]:
+            user_input[col] = st.selectbox(col, ["Yes", "No"])
         elif col == "Category":
             user_input[col] = st.selectbox(col, category_options)
         elif col == "Drive wheels":
@@ -124,24 +143,20 @@ def run_car_price_app():
             user_input[col] = st.selectbox(col, fuel_gear_options)
         elif col == "Doors_category":
             user_input[col] = st.selectbox(col, doors_category_options)
-        elif col not in user_input:
+        else:
             user_input[col] = st.text_input(col, value="Unknown")
 
-    # Map Yes/No ke 1/0
     for col in ["Right_hand_drive", "Leather interior"]:
         if col in user_input:
-            user_input[col] = yes_no_map.get(user_input[col], 0)
+            user_input[col] = 1 if user_input[col] == "Yes" else 0
 
-    # Pastikan tipe data sesuai
     for col in num_cols:
-        if col in user_input:
+        if col in user_input and col not in ["Model_encoded", "is_premium"]:
             user_input[col] = float(user_input[col])
 
-    # Convert ke DataFrame dan urutkan kolom sesuai expected_cols
     input_df = pd.DataFrame([user_input])
     input_df = input_df.reindex(columns=expected_cols)
 
-    # Predict
     if st.button("🔮 Predict Price"):
         try:
             log_prediction = model.predict(input_df)[0]
@@ -150,14 +165,14 @@ def run_car_price_app():
         except Exception as e:
             st.error(f"Prediction failed: {e}")
 
-# ===== Main App =====
 def main():
     stc.html(html_home)
+    st.markdown(desc_home, unsafe_allow_html=True)
     menu = ["Home", "Car Price Prediction"]
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
-        st.markdown(desc_home, unsafe_allow_html=True)
+        pass
     elif choice == "Car Price Prediction":
         run_car_price_app()
 
