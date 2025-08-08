@@ -126,12 +126,12 @@ def run_car_price_app():
 
 # ===== Main App =====
 def main():
-    stc.html(html_temp)
+    stc.html(html_home)
     menu = ["Home", "Car Price Prediction"]
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
-        st.markdown(desc_temp, unsafe_allow_html=True)
+        st.markdown(desc_home, unsafe_allow_html=True)
     elif choice == "Car Price Prediction":
         run_car_price_app()
 
