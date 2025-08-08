@@ -20,9 +20,9 @@ else:
     st.error("Model pipeline tidak mengandung preprocessing. Simpan ulang model dengan preprocessing.")
     st.stop()
 
-# ===== Load Excel terpisah premium dan non-premium =====
-df_premium = pd.read_excel('premium_models_summary.xlsx')     # is_premium harus 1 di sini
-df_non_premium = pd.read_excel('non_premium_models_summary.xlsx')  # is_premium harus 0 di sini
+# ===== Load CSV terpisah premium dan non-premium =====
+df_premium = pd.read_csv('premium_models_summary.csv')      # is_premium harus 1 di sini
+df_non_premium = pd.read_csv('non_premium_models_summary.csv')  # is_premium harus 0 di sini
 
 df_all = pd.concat([df_premium, df_non_premium], ignore_index=True)
 
@@ -97,7 +97,7 @@ def run_car_price_app():
         elif col == "Model_encoded":
             selected_model = st.selectbox("Model", model_options)
             user_input[col] = model_price_mean.get(selected_model, 0)
-            # Set is_premium dari Excel
+            # Set is_premium dari CSV
             user_input["is_premium"] = premium_map.get(selected_model, 0)
             # Info ke user
             if user_input["is_premium"] == 1:
