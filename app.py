@@ -23,20 +23,26 @@ else:
     st.stop()
 
 # ===== Halaman Home =====
-html_temp = """
-<div style="background-color:#000;padding:10px;border-radius:10px">
-<h1 style="color:#fff;text-align:center">🚗 Car Price Prediction App</h1>
-<h4 style="color:#fff;text-align:center">Made for: Sales & Valuation Team</h4> 
+html_home = """
+<div style="background-color:#000;padding:15px;border-radius:10px">
+    <h1 style="color:white;text-align:center;">🚗 Car Price Prediction App</h1>
+    <h4 style="color:white;text-align:center;">Made for: Automotive Market Analysis</h4>
 </div>
 """
 
-desc_temp = """
+desc_home = """
 ### Tentang Aplikasi  
-Aplikasi ini digunakan untuk memprediksi harga mobil berdasarkan fitur-fitur yang diinput pengguna.  
-Model yang digunakan adalah **LightGBM** dengan preprocessing otomatis.  
+Aplikasi ini digunakan untuk memprediksi harga mobil berdasarkan fitur-fitur yang Anda masukkan.  
+Model yang digunakan adalah **LightGBM** dengan preprocessing otomatis yang sudah dilatih pada dataset Kaggle.  
 
 #### Data Source  
-Kaggle: [Car Price Prediction Challenge](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge)
+[Kaggle - Car Price Prediction Challenge](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge)
+
+---
+**Cara Menggunakan:**
+1. Buka menu *Car Price Prediction* di sidebar.  
+2. Isi semua form sesuai detail mobil Anda.  
+3. Klik tombol **Predict Price** untuk melihat estimasi harga mobil.
 """
 
 # ===== Form Car Price Prediction =====
