@@ -109,7 +109,8 @@ input_df = input_df.reindex(columns=expected_cols)
 # ======================
 if st.button("🔮 Predict Price"):
     try:
-        prediction = model.predict(input_df)[0]
+        log_prediction = model.predict(input_df)[0]
+        prediction = np.expm1(log_prediction)  # Reverse log1p
         st.success(f"💰 Estimated Car Price: ${prediction:,.2f}")
     except Exception as e:
         st.error(f"Prediction failed: {e}")
