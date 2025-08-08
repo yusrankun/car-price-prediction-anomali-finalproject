@@ -36,7 +36,7 @@ Aplikasi ini digunakan untuk memprediksi harga mobil berdasarkan fitur-fitur yan
 Model yang digunakan adalah **LightGBM** dengan preprocessing otomatis.  
 
 #### Data Source  
-Kaggle: <Masukkan Link>
+Kaggle: [Car Price Prediction Challenge](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge)
 """
 
 # ===== Form Car Price Prediction =====
