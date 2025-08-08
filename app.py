@@ -26,20 +26,22 @@ else:
 html_home = """
 <div style="
     background: linear-gradient(135deg, #4b6cb7, #182848);
-    padding: 20px 40px;
+    padding: 20px 30px;
     border-radius: 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    width: fit-content;
     max-width: 100%;
+    overflow: hidden;
 ">
-    <span style="font-size: 2.5em;">🚗</span>
+    <span style="font-size: 2.5em; flex-shrink: 0;">🚗</span>
     <h1 style="
         color: white;
         font-family: 'Trebuchet MS', sans-serif;
-        font-size: 2.2em;
+        font-size: clamp(1.5em, 4vw, 2.5em);
         margin: 0;
         white-space: nowrap;
     ">
