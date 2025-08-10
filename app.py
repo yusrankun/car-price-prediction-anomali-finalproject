@@ -32,21 +32,15 @@ DOORS_CATEGORY_OPTIONS = [
 ]
 
 PREMIUM_BRANDS = [
-    'BMW',
-    'MERCEDES-BENZ',
-    'AUDI',
-    'LEXUS',
-    'BENTLEY',
-    'FERRARI',
-    'LAMBORGHINI',
-    'MASERATI',
-    'PORSCHE'
+    'BMW', 'MERCEDES-BENZ', 'AUDI', 
+    'LEXUS', 'BENTLEY', 'FERRARI',
+    'LAMBORGHINI', 'MASERATI', 'PORSCHE'
 ]
 
 # ===== Load Model & Mapping =====
 model = joblib.load('best_model_LightGBM.pkl')
 
-with open("manufacturer_category_model-2.json", "r") as f:
+with open("manufacturer_category_model.json", "r") as f:
     manu_cat_model_map = json.load(f)
 
 with open("model_price_mean.json", "r") as f:
