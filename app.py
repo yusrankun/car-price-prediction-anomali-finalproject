@@ -112,9 +112,14 @@ def run_car_price_app():
     st.subheader("Masukkan Detail Mobil")
     user_input = {}
 
-    # Manufacturer
-    manufacturers = sorted(list(manu_cat_model_map.keys()))
+    # Manufacturer dengan validasi tidak boleh kosong
+    manufacturers = ["-- Pilih Manufacturer --"] + sorted(list(manu_cat_model_map.keys()))
     chosen_manufacturer = st.selectbox("Manufacturer", manufacturers)
+
+    if chosen_manufacturer == "-- Pilih Manufacturer --":
+        st.warning("⚠️ Silakan pilih Manufacturer terlebih dahulu sebelum melanjutkan.")
+        return  # Hentikan proses jika belum dipilih
+
     chosen_manufacturer_upper = chosen_manufacturer.upper()
     user_input["Manufacturer"] = chosen_manufacturer
     
@@ -199,9 +204,9 @@ def run_car_price_app():
         try:
             log_prediction = model.predict(input_df)[0]
             prediction = np.expm1(log_prediction)
-            st.success(f"💰 Estimated Car Price: ${prediction:,.2f}")
+            st.success(f"💰 Perkiraan Harga Mobil: ${prediction:,.2f}")
         except Exception as e:
-            st.error(f"Prediction failed: {e}")
+            st.error(f"Prediksi gagal: {e}")
 
 def main():
     stc.html(html_home)
