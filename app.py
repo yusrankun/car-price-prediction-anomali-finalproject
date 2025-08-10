@@ -31,7 +31,17 @@ DOORS_CATEGORY_OPTIONS = [
     '4-5', '2-3', '>5'
 ]
 
-PREMIUM_BRANDS = ['BMW', 'MERCEDES-BENZ', 'AUDI', 'LEXUS']
+PREMIUM_BRANDS = [
+    'BMW',
+    'MERCEDES-BENZ',
+    'AUDI',
+    'LEXUS',
+    'BENTLEY',
+    'FERRARI',
+    'LAMBORGHINI',
+    'MASERATI',
+    'PORSCHE'
+]
 
 # ===== Load Model & Mapping =====
 model = joblib.load('best_model_LightGBM.pkl')
