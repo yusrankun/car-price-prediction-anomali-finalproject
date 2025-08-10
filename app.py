@@ -31,7 +31,6 @@ DOORS_CATEGORY_OPTIONS = [
     '4-5', '2-3', '>5'
 ]
 
-# Semua huruf besar biar konsisten
 PREMIUM_BRANDS = [
     'BMW', 'MERCEDES-BENZ', 'AUDI', 'LEXUS',
     'BENTLEY', 'FERRARI', 'LAMBORGHINI', 'MASERATI', 'PORSCHE'
@@ -42,10 +41,6 @@ model = joblib.load('best_model_LightGBM.pkl')
 
 with open("manufacturer_category_model.json", "r") as f:
     manu_cat_model_map = json.load(f)
-
-# 🔹 Ganti manufacturer “áƒ¡áƒ®áƒ•áƒ” menjadi "Unknown" di mapping JSON
-if 'áƒ¡áƒ®áƒ•áƒ' in manu_cat_model_map:
-    manu_cat_model_map['Unknown'] = manu_cat_model_map.pop('áƒ¡áƒ®áƒ•áƒ')
 
 with open("model_price_mean.json", "r") as f:
     model_price_mean = pd.Series(json.load(f))
@@ -64,10 +59,6 @@ df_premium = pd.read_csv('premium_models_summary.csv')
 df_non_premium = pd.read_csv('non_premium_models_summary.csv')
 df_all = pd.concat([df_premium, df_non_premium], ignore_index=True)
 
-# 🔹 Ganti “áƒ¡áƒ®áƒ•áƒ” menjadi "Unknown" di DataFrame
-df_all['Manufacturer'] = df_all['Manufacturer'].replace('áƒ¡áƒ®áƒ•áƒ', 'Unknown')
-
-# Normalisasi model ke uppercase untuk konsistensi
 premium_map = dict(zip(df_all['Model'].str.upper(), df_all['is_premium']))
 
 # ===== Halaman Home =====
@@ -119,16 +110,12 @@ def run_car_price_app():
     st.subheader("Masukkan Detail Mobil")
     user_input = {}
 
-    # Manufacturer dengan validasi
+    # Manufacturer dengan validasi awal
     manufacturers = ["-- Pilih Manufacturer --"] + sorted(list(manu_cat_model_map.keys()))
     chosen_manufacturer = st.selectbox("Manufacturer", manufacturers)
 
-    # 🔹 Jika user pilih “áƒ¡áƒ®áƒ•áƒ” → ubah ke "Unknown"
-    if chosen_manufacturer == 'áƒ¡áƒ®áƒ•áƒ':
-        chosen_manufacturer = 'Unknown'
-
     if chosen_manufacturer == "-- Pilih Manufacturer --":
-        st.warning("⚠️ Silakan pilih Manufacturer terlebih dahulu untuk melanjutkan.")
+        st.warning("⚠️ Silakan pilih Manufacturer terlebih dahulu.")
         return
 
     chosen_manufacturer_upper = chosen_manufacturer.upper()
@@ -145,7 +132,7 @@ def run_car_price_app():
     selected_model_upper = selected_model.upper()
     user_input["Model"] = selected_model
 
-    # 🔹 Jika model adalah "Gonow" → paksa manufacturer jadi "Unknown"
+    # Jika model = GONOW, manufacturer jadi Unknown
     if selected_model_upper == "GONOW":
         chosen_manufacturer = "Unknown"
         chosen_manufacturer_upper = "UNKNOWN"
@@ -221,9 +208,9 @@ def run_car_price_app():
         try:
             log_prediction = model.predict(input_df)[0]
             prediction = np.expm1(log_prediction)
-            st.success(f"💰 Perkiraan Harga Mobil: ${prediction:,.2f}")
+            st.success(f"💰 Estimated Car Price: ${prediction:,.2f}")
         except Exception as e:
-            st.error(f"Prediksi gagal: {e}")
+            st.error(f"Prediction failed: {e}")
 
 def main():
     stc.html(html_home)
