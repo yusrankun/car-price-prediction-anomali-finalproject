@@ -145,6 +145,12 @@ def run_car_price_app():
     selected_model_upper = selected_model.upper()
     user_input["Model"] = selected_model
 
+    # 🔹 Jika model adalah "Gonow" → paksa manufacturer jadi "Unknown"
+    if selected_model_upper == "GONOW":
+        chosen_manufacturer = "Unknown"
+        chosen_manufacturer_upper = "UNKNOWN"
+        user_input["Manufacturer"] = "Unknown"
+
     # Model encoding
     user_input["Model_encoded"] = model_price_mean.get(selected_model, 0)
 
