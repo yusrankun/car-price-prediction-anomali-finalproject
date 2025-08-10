@@ -1,0 +1,2622 @@
+{
+    "ACURA": {
+        "Jeep": [
+            "Mdx",
+            "Rdx"
+        ],
+        "Sedan": [
+            "Tl",
+            "Tl Saber",
+            "Tlx",
+            "Tsx"
+        ]
+    },
+    "ALFA ROMEO": {
+        "Coupe": [
+            "147"
+        ],
+        "Hatchback": [
+            "Giulietta"
+        ],
+        "Sedan": [
+            "159",
+            "166"
+        ]
+    },
+    "ASTON MARTIN": {
+        "Coupe": [
+            "Virage"
+        ]
+    },
+    "AUDI": {
+        "Coupe": [
+            "50",
+            "A3",
+            "A4",
+            "A5",
+            "A5 Sportback",
+            "A7",
+            "Tt"
+        ],
+        "Hatchback": [
+            "A3",
+            "A4",
+            "A7",
+            "Q5",
+            "Rs7"
+        ],
+        "Jeep": [
+            "100",
+            "A3",
+            "Allroad",
+            "Q3",
+            "Q5",
+            "Q5 Prestige",
+            "Q5 S-Line",
+            "Q7",
+            "Q7 Sport"
+        ],
+        "Sedan": [
+            "A3",
+            "A3 4X4",
+            "A3 Premium",
+            "A4",
+            "A4 B5",
+            "A4 B6",
+            "A4 B7",
+            "A4 Premium",
+            "A4 Premium Plius",
+            "A4 S Line",
+            "A4 S4",
+            "A4 Sline",
+            "A6",
+            "A6 6",
+            "A6 C7",
+            "A6 Evropuli",
+            "A6 Premium Plus",
+            "A6 Quattro",
+            "A6 Universal",
+            "A7",
+            "A7 Prestige",
+            "A8",
+            "Allroad",
+            "Q3",
+            "Q5",
+            "Q7",
+            "Rs6",
+            "S3",
+            "S6"
+        ],
+        "Universal": [
+            "Allroad",
+            "Allroad Allroad"
+        ]
+    },
+    "BENTLEY": {
+        "Coupe": [
+            "Continental Gt"
+        ],
+        "Sedan": [
+            "Mulsanne"
+        ]
+    },
+    "BMW": {
+        "Cabriolet": [
+            "128 M Tech",
+            "325 Ci",
+            "328",
+            "330",
+            "335",
+            "428",
+            "645",
+            "Z4"
+        ],
+        "Coupe": [
+            "128",
+            "130",
+            "135",
+            "3.18E38",
+            "316",
+            "318",
+            "320",
+            "320 320",
+            "325",
+            "325 I",
+            "328",
+            "328 Drift Car",
+            "330",
+            "335",
+            "335 M Paket",
+            "420",
+            "428",
+            "428 I",
+            "428 Sport Line",
+            "435",
+            "435 Cupe",
+            "525",
+            "640",
+            "645 Ci",
+            "650",
+            "M3",
+            "M4",
+            "M4 Competition",
+            "M5",
+            "M6",
+            "Z4 30 Si"
+        ],
+        "Hatchback": [
+            "116",
+            "118 20",
+            "118 M-Sport Lci",
+            "120",
+            "316",
+            "318",
+            "320",
+            "325",
+            "530 Gt",
+            "550",
+            "550 Gt",
+            "I3",
+            "M3",
+            "X1"
+        ],
+        "Jeep": [
+            "X1",
+            "X1 28Xdrive",
+            "X1 4X4",
+            "X1 X-Drive",
+            "X3",
+            "X3 3.5I",
+            "X3 Sdrive",
+            "X4",
+            "X5",
+            "X5 3.0",
+            "X5 3.5",
+            "X5 35D",
+            "X5 4.8Is",
+            "X5 44I",
+            "X5 Diesel",
+            "X5 E53",
+            "X5 E70",
+            "X5 Japan",
+            "X5 M",
+            "X5 M Packet",
+            "X5 Rest",
+            "X5 Restilling",
+            "X5 Sport",
+            "X5 X-Drive",
+            "X5 X5",
+            "X5 Xdrive",
+            "X5 Xdrive 35D",
+            "X6",
+            "X6 40D",
+            "X6 Germany",
+            "X6 Limited",
+            "X6 M"
+        ],
+        "Limousine": [
+            "340"
+        ],
+        "Sedan": [
+            "114",
+            "118",
+            "225",
+            "3.18E38",
+            "3.20E38",
+            "3.25E48",
+            "316",
+            "316 1995",
+            "316 I",
+            "318",
+            "318 318",
+            "318 M",
+            "320",
+            "320 2.0",
+            "320 2.2",
+            "320 Diesel",
+            "320 Gran Turismo",
+            "320 I",
+            "325",
+            "325 Xi",
+            "328",
+            "328 Dizel",
+            "328 I",
+            "328 Sulev",
+            "328 Xdrive",
+            "330",
+            "335",
+            "335 335I",
+            "335 D",
+            "428",
+            "5.30E62",
+            "520",
+            "520 D Xdrive Luxury",
+            "520 I",
+            "520 Vanos",
+            "523",
+            "525",
+            "525 525",
+            "525 I",
+            "525 M",
+            "525 Tdi",
+            "525 Vanos",
+            "528",
+            "528 3.0",
+            "528 I",
+            "530",
+            "530 525I",
+            "530 G30",
+            "530 I",
+            "530 M",
+            "535",
+            "535 535",
+            "535 Comfort-Sport",
+            "535 Diesel",
+            "535 I",
+            "535 I Xdrive",
+            "535 M",
+            "535 M Paket",
+            "535 Twinturbo",
+            "535 Xi",
+            "540 I",
+            "545",
+            "550",
+            "550 F10",
+            "550 M Packet",
+            "630",
+            "635",
+            "640",
+            "640 Gran-Coupe",
+            "640 M",
+            "650",
+            "650 450 Hp",
+            "7.30E34",
+            "730",
+            "730 3.0",
+            "735",
+            "740",
+            "740 I",
+            "745",
+            "745 I",
+            "750",
+            "750 4.8",
+            "M3",
+            "M5",
+            "M5 Japan",
+            "M550",
+            "M6",
+            "M6 Gran Cupe",
+            "X1",
+            "X3",
+            "X5",
+            "X6 M"
+        ],
+        "Universal": [
+            "320",
+            "320 M",
+            "323",
+            "X5",
+            "X5 3.0I",
+            "X5 M"
+        ]
+    },
+    "BUICK": {
+        "Jeep": [
+            "Century",
+            "Encore"
+        ],
+        "Sedan": [
+            "Century",
+            "Enclave",
+            "Regal"
+        ]
+    },
+    "CADILLAC": {
+        "Coupe": [
+            "Ats"
+        ],
+        "Jeep": [
+            "Escalade",
+            "Srx"
+        ],
+        "Sedan": [
+            "Allante",
+            "Ats",
+            "Catera",
+            "Cts",
+            "Dts",
+            "Srx"
+        ]
+    },
+    "CHEVROLET": {
+        "Cabriolet": [
+            "Camaro"
+        ],
+        "Coupe": [
+            "1500",
+            "Camaro",
+            "Camaro Ls",
+            "Camaro Rs",
+            "Malibu"
+        ],
+        "Goods Wagon": [
+            "Cruze",
+            "Nubira"
+        ],
+        "Hatchback": [
+            "Aveo",
+            "Cruze",
+            "Cruze Cruze",
+            "Cruze Lt",
+            "Cruze S",
+            "Kalos",
+            "Lacetti",
+            "Matiz",
+            "Sonic",
+            "Sonic Lt",
+            "Spark",
+            "Volt",
+            "Volt Premier"
+        ],
+        "Jeep": [
+            "1500",
+            "Camaro",
+            "Captiva",
+            "Cruze",
+            "Equinox",
+            "Equinox Lt",
+            "Hhr",
+            "Niva",
+            "Orlando",
+            "Silverado",
+            "Suburban",
+            "Trailblazer",
+            "Traverse",
+            "Trax",
+            "Volt"
+        ],
+        "Limousine": [
+            "Impala"
+        ],
+        "Minivan": [
+            "Cruze",
+            "Spark"
+        ],
+        "Pickup": [
+            "Captiva",
+            "Colorado"
+        ],
+        "Sedan": [
+            "1500",
+            "Avalanche",
+            "Aveo",
+            "Camaro",
+            "Corvette",
+            "Cruze",
+            "Cruze L T",
+            "Cruze Ls",
+            "Cruze Lt",
+            "Cruze Lt Rs",
+            "Cruze Ltz",
+            "Cruze Premier",
+            "Cruze Rs",
+            "Cruze Sonic",
+            "Cruze Strocna",
+            "Equinox",
+            "Impala",
+            "Lacetti",
+            "Malibu",
+            "Malibu Eco",
+            "Malibu Hybrid",
+            "Malibu Lt",
+            "Matiz",
+            "Silverado",
+            "Sonic",
+            "Spark",
+            "Suburban",
+            "Traverse",
+            "Volt",
+            "Volt Full Packet",
+            "Volt Premier"
+        ]
+    },
+    "CHRYSLER": {
+        "Cabriolet": [
+            "Crossfire"
+        ],
+        "Coupe": [
+            "300",
+            "Sebring"
+        ],
+        "Hatchback": [
+            "Pt Cruiser"
+        ],
+        "Limousine": [
+            "300"
+        ],
+        "Minivan": [
+            "Town And Country"
+        ],
+        "Sedan": [
+            "200",
+            "300",
+            "300 Limited",
+            "Pacifica",
+            "Pt Cruiser",
+            "Town And Country"
+        ],
+        "Universal": [
+            "Pt Cruiser Pt Cruiser"
+        ]
+    },
+    "CITROEN": {
+        "Goods Wagon": [
+            "Berlingo",
+            "C5"
+        ],
+        "Hatchback": [
+            "C1",
+            "C1 C",
+            "C4",
+            "Ds 4"
+        ],
+        "Jeep": [
+            "C8"
+        ],
+        "Sedan": [
+            "C4",
+            "C5"
+        ]
+    },
+    "DAEWOO": {
+        "Hatchback": [
+            "Gentra",
+            "Matiz"
+        ],
+        "Sedan": [
+            "Gentra",
+            "Lacetti"
+        ]
+    },
+    "DAIHATSU": {
+        "Hatchback": [
+            "Mira",
+            "Move",
+            "Sirion"
+        ],
+        "Jeep": [
+            "Feroza",
+            "Terios"
+        ],
+        "Sedan": [
+            "Terios"
+        ],
+        "Universal": [
+            "Yrv"
+        ]
+    },
+    "DODGE": {
+        "Coupe": [
+            "Challenger"
+        ],
+        "Hatchback": [
+            "Caliber",
+            "Caliber Sxt"
+        ],
+        "Jeep": [
+            "Caliber",
+            "Caliber Journey",
+            "Durango",
+            "Journey",
+            "Ram 1500"
+        ],
+        "Minivan": [
+            "Caravan",
+            "Caravan Tradesman"
+        ],
+        "Pickup": [
+            "Ram"
+        ],
+        "Sedan": [
+            "Avenger",
+            "Caliber",
+            "Challenger",
+            "Charger Rt",
+            "Dart",
+            "Dart Gt 2.4",
+            "Dart Limited",
+            "Intrepid",
+            "Neon",
+            "Ram",
+            "Ramcharger"
+        ],
+        "Universal": [
+            "Caliber"
+        ]
+    },
+    "FERRARI": {
+        "Coupe": [
+            "456",
+            "F50"
+        ]
+    },
+    "FIAT": {
+        "Cabriolet": [
+            "500C Lounge"
+        ],
+        "Coupe": [
+            "500",
+            "500 46 Ml",
+            "500 Abarth",
+            "500 Lounge",
+            "500 Sport",
+            "500 Sport Panorama",
+            "500L Long"
+        ],
+        "Goods Wagon": [
+            "Doblo"
+        ],
+        "Hatchback": [
+            "500",
+            "500 Abarth",
+            "500 S",
+            "500 Sport",
+            "500 Turbo",
+            "500C",
+            "500L",
+            "Cinquecento",
+            "Punto"
+        ],
+        "Jeep": [
+            "500",
+            "500L",
+            "500X",
+            "500X Lounge",
+            "Panda"
+        ],
+        "Sedan": [
+            "500",
+            "500 Abarth",
+            "Panda",
+            "Seicento Fiat 600"
+        ]
+    },
+    "FORD": {
+        "Cabriolet": [
+            "Mustang",
+            "Mustang Cabrio"
+        ],
+        "Coupe": [
+            "Cougar",
+            "Ka",
+            "Mustang",
+            "Mustang Ecoboost"
+        ],
+        "Goods Wagon": [
+            "Focus",
+            "Mondeo",
+            "Tourneo Connect",
+            "Transit",
+            "Transit Connect",
+            "Transit Connect Prastoi",
+            "Transit Ford"
+        ],
+        "Hatchback": [
+            "C-Max",
+            "C-Max Hybrid",
+            "C-Max Premium",
+            "C-Max Se",
+            "C-Max Sel",
+            "Escort",
+            "Fiesta",
+            "Fiesta 1.6",
+            "Fiesta Se",
+            "Focus",
+            "Focus Se",
+            "Focus St",
+            "Focus Titanium",
+            "Ka",
+            "Mondeo"
+        ],
+        "Jeep": [
+            "B-Max",
+            "C-Max",
+            "Ecosport",
+            "Ecosport Se",
+            "Edge",
+            "Escape",
+            "Escape 3.0",
+            "Escape Escape",
+            "Escape Hybrid",
+            "Escape Se",
+            "Escape Titanium",
+            "Expedition",
+            "Explorer",
+            "Explorer Turbo Japan",
+            "Explorer Xlt",
+            "Fusion",
+            "Maverick",
+            "Mustang",
+            "Taurus",
+            "Taurus X"
+        ],
+        "Microbus": [
+            "Transit",
+            "Transit 100Ld",
+            "Transit 135",
+            "Transit 2.4",
+            "Transit 350T",
+            "Transit Cl",
+            "Transit Custom",
+            "Transit Fff",
+            "Transit S",
+            "Transit T330",
+            "Transit Tourneo"
+        ],
+        "Minivan": [
+            "C-Max",
+            "Explorer",
+            "Galaxy",
+            "Transit"
+        ],
+        "Pickup": [
+            "F150",
+            "Ranger",
+            "Ranger Wildtrak"
+        ],
+        "Sedan": [
+            "C-Max",
+            "C-Max C-Max",
+            "C-Max Sel",
+            "Escape",
+            "Escort",
+            "F150",
+            "Fiesta",
+            "Focus",
+            "Focus Flexfuel",
+            "Focus Fokusi",
+            "Focus Se",
+            "Focus Sel",
+            "Focus Titanium",
+            "Fusion",
+            "Fusion 1.6",
+            "Fusion 2015",
+            "Fusion Bybrid",
+            "Fusion Hibrid",
+            "Fusion Hybrid",
+            "Fusion Hybrid Se",
+            "Fusion Phev",
+            "Fusion Se",
+            "Fusion Titanium",
+            "Mustang",
+            "Scorpio",
+            "Sierra",
+            "Sierra Dizel",
+            "Taurus",
+            "Taurus Interceptor"
+        ],
+        "Universal": [
+            "C-Max",
+            "Courier",
+            "Focus",
+            "Fusion",
+            "S-Max",
+            "Tourneo Connect",
+            "Transit"
+        ]
+    },
+    "GAZ": {
+        "Goods Wagon": [
+            "3796"
+        ],
+        "Jeep": [
+            "20",
+            "322173"
+        ],
+        "Limousine": [
+            "32214"
+        ],
+        "Pickup": [
+            "31105"
+        ],
+        "Sedan": [
+            "20",
+            "21",
+            "21 3.0",
+            "24 10",
+            "3110"
+        ],
+        "Universal": [
+            "24"
+        ]
+    },
+    "GMC": {
+        "Jeep": [
+            "Acadia",
+            "Envoy",
+            "Terrain",
+            "Yukon"
+        ],
+        "Pickup": [
+            "Acadia"
+        ],
+        "Sedan": [
+            "Acadia",
+            "Terrain",
+            "Yukon"
+        ]
+    },
+    "GREATWALL": {
+        "Sedan": [
+            "C30"
+        ]
+    },
+    "HAVAL": {
+        "Jeep": [
+            "H6"
+        ]
+    },
+    "HONDA": {
+        "Coupe": [
+            "Accord",
+            "Civic",
+            "Civic Ex",
+            "Cr-Z",
+            "Fit",
+            "Insight",
+            "Integra"
+        ],
+        "Hatchback": [
+            "Civic",
+            "Cr-Z",
+            "Edix",
+            "Fit",
+            "Fit Aria",
+            "Fit Fit",
+            "Fit Gp-5",
+            "Fit Gp-6",
+            "Fit Hbrid",
+            "Fit Hibrid",
+            "Fit Hybrid",
+            "Fit Hybryd",
+            "Fit Lx",
+            "Fit Modulo",
+            "Fit Navi Premium",
+            "Fit Premium Paketi",
+            "Fit Premiumi",
+            "Fit Premiym",
+            "Fit Rs",
+            "Fit Rs Modeli",
+            "Fit Rs Mugen",
+            "Fit S",
+            "Fit Sport",
+            "Fred",
+            "Insight",
+            "Insight Ex",
+            "Insight Lx",
+            "Shuttle"
+        ],
+        "Jeep": [
+            "400X",
+            "Civic",
+            "Cr-V",
+            "Cr-V Cr-V",
+            "Cr-V Lx",
+            "Crosstour",
+            "Crx",
+            "Fit",
+            "Hr-V",
+            "Hr-V Ex",
+            "Hr-V Exl",
+            "Odyssey",
+            "Passport",
+            "Pilot"
+        ],
+        "Minivan": [
+            "Elysion",
+            "Elysion 3.0",
+            "Fred",
+            "Fred Hibridi",
+            "Odyssey",
+            "Step Wagon",
+            "Step Wagon Pada",
+            "Step Wagon Rg2 Spada",
+            "Stream"
+        ],
+        "Pickup": [
+            "Ridgeline"
+        ],
+        "Sedan": [
+            "Accord",
+            "Accord Cl9 Type S",
+            "Civic",
+            "Civic Ferio",
+            "Civic Hybrid",
+            "Cr-V",
+            "Cr-Z",
+            "Element",
+            "Fit",
+            "Fit Ex",
+            "Fit S- Paketi.",
+            "Insight",
+            "Insight Ex",
+            "Inspire",
+            "Legend Full",
+            "Odyssey"
+        ],
+        "Universal": [
+            "Civic",
+            "Crossroad",
+            "Edix Fr-V",
+            "Element",
+            "Fit",
+            "Odyssey",
+            "Shuttle",
+            "Stream"
+        ]
+    },
+    "HUMMER": {
+        "Jeep": [
+            "H2",
+            "H3"
+        ]
+    },
+    "HYUNDAI": {
+        "Coupe": [
+            "Elantra",
+            "Elantra Gs",
+            "Genesis",
+            "Veloster",
+            "Veloster R-Spec"
+        ],
+        "Goods Wagon": [
+            "I30"
+        ],
+        "Hatchback": [
+            "Accent",
+            "Accent Gs",
+            "Accent Se",
+            "Elantra",
+            "Elantra Gt",
+            "Elantra I30",
+            "Getz",
+            "I30",
+            "Ioniq",
+            "Sonata",
+            "Veloster",
+            "Veloster Remix",
+            "Veloster Turbo"
+        ],
+        "Jeep": [
+            "Elantra",
+            "Galloper",
+            "H1",
+            "Ix35",
+            "Ix35 2.0",
+            "Kona",
+            "Santa Fe",
+            "Santa Fe Long",
+            "Santa Fe Sport",
+            "Santa Fe Ultimate",
+            "Sonata",
+            "Tucson",
+            "Tucson Limited",
+            "Tucson Se",
+            "Tucson Turbo",
+            "Veracruz"
+        ],
+        "Microbus": [
+            "H1"
+        ],
+        "Minivan": [
+            "H1",
+            "H1 Grand Starex",
+            "H1 Grandstarex",
+            "H1 Starixs",
+            "Santa Fe"
+        ],
+        "Pickup": [
+            "H1",
+            "I30"
+        ],
+        "Sedan": [
+            "Accent",
+            "Azera",
+            "Elantra",
+            "Elantra 2014",
+            "Elantra 2016",
+            "Elantra Gls Limited",
+            "Elantra Gt",
+            "Elantra Limited",
+            "Elantra Limitedi",
+            "Elantra Se",
+            "Elantra Sport Limited",
+            "Genesis",
+            "Getz",
+            "Grandeur",
+            "H1",
+            "I20",
+            "I30",
+            "I40",
+            "Lantra",
+            "Lantra Limited",
+            "Santa Fe",
+            "Sonata",
+            "Sonata 2.0T",
+            "Sonata 2.4L",
+            "Sonata Blue Edition",
+            "Sonata Hibrid",
+            "Sonata Hybrid",
+            "Sonata Limited",
+            "Sonata Lpg",
+            "Sonata S",
+            "Sonata Se",
+            "Sonata Se Limited",
+            "Sonata Sport",
+            "Tucson",
+            "Veloster"
+        ],
+        "Universal": [
+            "H1",
+            "I30"
+        ]
+    },
+    "INFINITI": {
+        "Cabriolet": [
+            "G37"
+        ],
+        "Coupe": [
+            "G37"
+        ],
+        "Hatchback": [
+            "Ex37"
+        ],
+        "Jeep": [
+            "Ex35",
+            "Fx35",
+            "Fx45",
+            "Jx35",
+            "Qx56",
+            "Qx60",
+            "Qx80"
+        ],
+        "Sedan": [
+            "G20",
+            "G35 X",
+            "G37",
+            "M37",
+            "Q45",
+            "Q50 S Red"
+        ]
+    },
+    "ISUZU": {
+        "Jeep": [
+            "Rodeo",
+            "Vehicross",
+            "Wizard"
+        ]
+    },
+    "JAGUAR": {
+        "Cabriolet": [
+            "F-Type",
+            "Xk"
+        ],
+        "Jeep": [
+            "Daimler",
+            "E-Pace",
+            "E-Pace P200",
+            "F-Pace",
+            "F-Type"
+        ],
+        "Sedan": [
+            "Daimler",
+            "F-Type R",
+            "S-Type",
+            "X-Type",
+            "Xe",
+            "Xf",
+            "Xj"
+        ]
+    },
+    "JEEP": {
+        "Jeep": [
+            "Cherokee",
+            "Compass",
+            "Grand Cherokee",
+            "Grand Cherokee Laredo",
+            "Grand Cherokee Saiubileo",
+            "Grand Cherokee Special E",
+            "Liberty",
+            "Patriot",
+            "Patriot 70Th Anniversary",
+            "Patriot Latitude",
+            "Renegade",
+            "Wrangler",
+            "Wrangler Arb",
+            "Wrangler Sport"
+        ],
+        "Sedan": [
+            "Cherokee",
+            "Compass",
+            "Grand Cherokee",
+            "Renegade"
+        ]
+    },
+    "KIA": {
+        "Coupe": [
+            "Avella"
+        ],
+        "Goods Wagon": [
+            "Ceed"
+        ],
+        "Hatchback": [
+            "Ceed",
+            "Optima",
+            "Picanto",
+            "Rio",
+            "Rio Lx"
+        ],
+        "Jeep": [
+            "Carens",
+            "Niro",
+            "Optima",
+            "Rio",
+            "Sorento",
+            "Sorento Ex",
+            "Sorento Sx",
+            "Soul",
+            "Sportage",
+            "Sportage Ex",
+            "Sportage Prestige",
+            "Sportage Sx"
+        ],
+        "Minivan": [
+            "Carnival",
+            "Carnival Grand"
+        ],
+        "Sedan": [
+            "Avella",
+            "Cadenza",
+            "Ceed",
+            "Cerato",
+            "Cerato K3",
+            "Forte",
+            "Niro",
+            "Optima",
+            "Optima Eco",
+            "Optima Ex",
+            "Optima Hybid",
+            "Optima Hybrid",
+            "Optima K5",
+            "Optima Sxl",
+            "Optima X",
+            "Picanto",
+            "Rio",
+            "Rio Lx",
+            "Sorento",
+            "Soul",
+            "Sportage"
+        ],
+        "Universal": [
+            "Ceed"
+        ]
+    },
+    "LAMBORGHINI": {
+        "Universal": [
+            "Urus"
+        ]
+    },
+    "LANCIA": {
+        "Minivan": [
+            "Musa"
+        ]
+    },
+    "LAND ROVER": {
+        "Jeep": [
+            "Defender 90 Cabrio",
+            "Discovery",
+            "Discovery Iv",
+            "Discovery Lr3",
+            "Freelander",
+            "Land Rover Sport",
+            "Range Rover",
+            "Range Rover Evoque",
+            "Range Rover Evoque 2.0",
+            "Range Rover Velar",
+            "Range Rover Vogue"
+        ]
+    },
+    "LEXUS": {
+        "Cabriolet": [
+            "Is 350 C"
+        ],
+        "Coupe": [
+            "Rc F",
+            "Rc F F Sport"
+        ],
+        "Hatchback": [
+            "Ct 200H",
+            "Ct 200H F Sport",
+            "Ct 200H F-Sport",
+            "Es 300"
+        ],
+        "Jeep": [
+            "Gx 460",
+            "Gx 470",
+            "Gx 470 470",
+            "Gx 470 Suv 4D 4.7L V8 S",
+            "Lx 470",
+            "Lx 570",
+            "Nx 200",
+            "Nx 300",
+            "Rx 300",
+            "Rx 350",
+            "Rx 350 F Sport",
+            "Rx 400",
+            "Rx 400 H",
+            "Rx 400 Hybrid",
+            "Rx 400 Restailing",
+            "Rx 450",
+            "Rx 450 F Sport",
+            "Rx 450 H",
+            "Rx 450 Hybrid"
+        ],
+        "Sedan": [
+            "Ct 200H",
+            "Ct 200H 1.8",
+            "Es 300",
+            "Es 300 Hybrid",
+            "Es 350",
+            "Gs 300",
+            "Gs 350",
+            "Gs 450",
+            "Gx 460",
+            "Gx 470",
+            "Hs 250H",
+            "Hs 250H Hybrid",
+            "Is 200",
+            "Is 250",
+            "Is 250 Turbo",
+            "Is 300",
+            "Is 350",
+            "Is-F",
+            "Ls 460",
+            "Rx 350"
+        ],
+        "Universal": [
+            "Ct 200H"
+        ]
+    },
+    "LINCOLN": {
+        "Jeep": [
+            "Navigator"
+        ],
+        "Limousine": [
+            "Navigator",
+            "Town Car"
+        ],
+        "Sedan": [
+            "Continental",
+            "Mkz",
+            "Mkz Hybrid",
+            "Town Car"
+        ]
+    },
+    "MASERATI": {
+        "Sedan": [
+            "Ghibli",
+            "Quattroporte"
+        ]
+    },
+    "MAZDA": {
+        "Coupe": [
+            "Mazda 2",
+            "Rx-8"
+        ],
+        "Hatchback": [
+            "323",
+            "323 F",
+            "616",
+            "Atenza",
+            "Axela",
+            "Cx-3",
+            "Demio",
+            "Demio Evropuli",
+            "Demio Mazda2",
+            "Demio Sport",
+            "Eunos 500",
+            "Mazda 2",
+            "Mazda 3",
+            "Mazda 3 Sport",
+            "Verisa",
+            "Verisa 2007"
+        ],
+        "Jeep": [
+            "1000",
+            "1300",
+            "616",
+            "Cx-5",
+            "Cx-5 Touring",
+            "Cx-7",
+            "Cx-9",
+            "Tribute"
+        ],
+        "Minivan": [
+            "Mazda 5",
+            "Mpv",
+            "Mpv Lx",
+            "Premacy"
+        ],
+        "Sedan": [
+            "1000",
+            "1300",
+            "323",
+            "616",
+            "626",
+            "Atenza",
+            "Cx-7",
+            "Cx-9",
+            "Demio",
+            "Demio 12",
+            "Eunos 500",
+            "Mazda 3",
+            "Mazda 3 Sport",
+            "Mazda 6",
+            "Mazda 6 Grand Touring",
+            "Mazda 6 Touring",
+            "Millenia",
+            "Mx-5",
+            "Protege",
+            "Verisa"
+        ],
+        "Universal": [
+            "Atenza"
+        ]
+    },
+    "MERCEDES-BENZ": {
+        "Cabriolet": [
+            "Clk 430",
+            "E 350",
+            "Slk 230",
+            "Slk 350 300",
+            "Smart"
+        ],
+        "Coupe": [
+            "320",
+            "Amg Gt S",
+            "C 180",
+            "C 200 2.0",
+            "C 200 Kompressor",
+            "C 230",
+            "C 250",
+            "C 250 Amg",
+            "C 300",
+            "C 350",
+            "C 63 Amg",
+            "Cl 500",
+            "Cl 55 Amg Kompressor",
+            "Cl 550",
+            "Cl 600",
+            "Cl550 Amg",
+            "Cla 250",
+            "Clk 200",
+            "Clk 200 208",
+            "Clk 200 Kompressor",
+            "Clk 230",
+            "Clk 230 .",
+            "Clk 240",
+            "Clk 270",
+            "Clk 280",
+            "Clk 320",
+            "Clk 320 Amg",
+            "Clk 320 Avangarde",
+            "Clk 350",
+            "Clk 430",
+            "Clk 55 Amg",
+            "Cls 350",
+            "Cls 350 Amg",
+            "Cls 350 Japan",
+            "Cls 55 Amg",
+            "Cls 550",
+            "E 220",
+            "E 350",
+            "E 400",
+            "E 55",
+            "E 550",
+            "Gle 43 Amg",
+            "S 550",
+            "Smart",
+            "Smart Fortwo"
+        ],
+        "Goods Wagon": [
+            "311",
+            "C 180",
+            "C 200",
+            "C 220",
+            "Citan",
+            "E 200",
+            "Sprinter",
+            "Sprinter 313Cdi",
+            "Sprinter 411",
+            "Vito",
+            "Vito 111"
+        ],
+        "Hatchback": [
+            "A 140",
+            "A 160",
+            "A 170",
+            "A 170 Avangard",
+            "A 170 Cdi",
+            "A 190",
+            "A 200",
+            "B 170",
+            "B 170 Edition One",
+            "B 180",
+            "B 200",
+            "B 200 Turbo",
+            "C 240",
+            "Cla 250",
+            "Gla 250",
+            "S 63 Amg",
+            "Smart"
+        ],
+        "Jeep": [
+            "270",
+            "A 140",
+            "G 230 2.2Cdi",
+            "G 300",
+            "G 320",
+            "G 350",
+            "G 55 Amg",
+            "G 550",
+            "G 63 Amg",
+            "G 65 Amg 63Amg",
+            "G 65 Amg G63 Amg",
+            "Gl 320",
+            "Gl 320 Bluetec",
+            "Gl 350",
+            "Gl 350 Bluetec",
+            "Gl 350 Blutec",
+            "Gl 450",
+            "Gl 450 3.0",
+            "Gl 550",
+            "Gl 63 Amg",
+            "Gla 200",
+            "Gla 250",
+            "Glc 250",
+            "Glc 300",
+            "Glc 300 Glc Coupe",
+            "Gle 350",
+            "Gle 400",
+            "Gle 400 A M G",
+            "Gle 400 Coupe Amg Kit",
+            "Gle 450",
+            "Gle 63 Amg",
+            "Glk 250",
+            "Glk 300",
+            "Glk 350",
+            "Gls 450",
+            "Ml 250",
+            "Ml 270",
+            "Ml 270 Cdi",
+            "Ml 280",
+            "Ml 300",
+            "Ml 320",
+            "Ml 320 Amg",
+            "Ml 320 Cdi",
+            "Ml 350",
+            "Ml 350 3.7",
+            "Ml 350 370",
+            "Ml 350 4 Matic",
+            "Ml 350 4Matic",
+            "Ml 350 Bluetec",
+            "Ml 350 Ml350",
+            "Ml 350 Special Edition",
+            "Ml 350 Sport",
+            "Ml 500",
+            "Ml 500 Amg",
+            "Ml 55 Amg",
+            "Ml 550",
+            "Ml 550 4.7",
+            "Ml 63 Amg",
+            "R 350"
+        ],
+        "Limousine": [
+            "E 230",
+            "S 500"
+        ],
+        "Microbus": [
+            "208",
+            "270",
+            "290",
+            "416",
+            "A 140 140",
+            "Sprinter",
+            "Sprinter 308 Cdi",
+            "Sprinter 313",
+            "Sprinter 314",
+            "Sprinter 315Cdi",
+            "Sprinter 315Cdi-Xl",
+            "Sprinter 316",
+            "Sprinter 316 Cdi",
+            "Sprinter 516",
+            "Sprinter Euro4",
+            "Sprinter Max",
+            "Sprinter Maxi- Max",
+            "Sprinter Vip Class",
+            "Vito",
+            "Vito 113"
+        ],
+        "Minivan": [
+            "220",
+            "R 320",
+            "R 350",
+            "R 350 Bluetec",
+            "Sprinter Van",
+            "V 230",
+            "Vaneo",
+            "Viano",
+            "Viano Ambiente",
+            "Vito",
+            "Vito 110D",
+            "Vito 111 Cdi",
+            "Vito 115",
+            "Vito 115 Cdi",
+            "Vito 2.2",
+            "Vito Exstralong",
+            "Vito Extra Long",
+            "Vito Extralong",
+            "Vito Long115"
+        ],
+        "Pickup": [
+            "X 250"
+        ],
+        "Sedan": [
+            "190",
+            "200",
+            "220",
+            "230",
+            "230 W153",
+            "240",
+            "250",
+            "270",
+            "280",
+            "300",
+            "320",
+            "A 140",
+            "A 160",
+            "A 170",
+            "A 190",
+            "A 200",
+            "B 170",
+            "B 170 B Class",
+            "B 220",
+            "C 180",
+            "C 180 2.0",
+            "C 180 Komp",
+            "C 200",
+            "C 200 7G-Tronic",
+            "C 200 Kompressor",
+            "C 220",
+            "C 220 Cdi",
+            "C 230",
+            "C 230 2.0 Kompresor",
+            "C 230 2.5",
+            "C 230 Kompresor",
+            "C 240",
+            "C 240 W 203",
+            "C 250",
+            "C 250 1.8",
+            "C 250 18 Turbo",
+            "C 250 A.M.G",
+            "C 250 Amg-Paket-18",
+            "C 250 Luxury",
+            "C 270",
+            "C 280",
+            "C 300",
+            "C 300 4Matic",
+            "C 300 6.3 Amg Package",
+            "C 300 Sport",
+            "C 32 Amg",
+            "C 320",
+            "C 320 Amg",
+            "C 320 Cdi",
+            "C 350",
+            "C 36 Amg",
+            "C 400",
+            "C 43 Amg",
+            "C 63 Amg",
+            "Cla 250",
+            "Cla 250 Amg",
+            "Cla 45 Amg",
+            "Clk 200 200",
+            "Clk 200 Kompresor",
+            "Clk 320",
+            "Cls 350",
+            "Cls 350 Amg",
+            "Cls 450 Cls 400",
+            "Cls 500",
+            "Cls 55 Amg",
+            "Cls 550",
+            "Cls 550 550",
+            "Cls 63 Amg",
+            "E 200",
+            "E 200 2000",
+            "E 200 Cgi",
+            "E 200 W210",
+            "E 220",
+            "E 220 211",
+            "E 220 Cdi",
+            "E 220 Elegance",
+            "E 220 W210...Cdi",
+            "E 230",
+            "E 230 124",
+            "E 240",
+            "E 240 E 240",
+            "E 250",
+            "E 260",
+            "E 270",
+            "E 270 4",
+            "E 270 Avangardi",
+            "E 270 Cdi",
+            "E 280",
+            "E 280 3.0",
+            "E 280 Cdi",
+            "E 290",
+            "E 300",
+            "E 320",
+            "E 320 44",
+            "E 320 4Matic",
+            "E 320 Bluetec",
+            "E 350",
+            "E 350 212",
+            "E 350 4 Matic",
+            "E 350 4 Matic Amg Packag",
+            "E 350 Amg",
+            "E 350 W211",
+            "E 36 Amg",
+            "E 400",
+            "E 420",
+            "E 430",
+            "E 50",
+            "E 500",
+            "E 500 Amg",
+            "E 500 Avg",
+            "E 550",
+            "Gl 500",
+            "Glc 300",
+            "Gls 63 Amg",
+            "S 320",
+            "S 350",
+            "S 350 Cdi 320",
+            "S 350 Longia",
+            "S 350 W2222",
+            "S 400",
+            "S 420",
+            "S 430",
+            "S 430 4.3",
+            "S 500",
+            "S 500 67",
+            "S 500 Long",
+            "S 55 5.5",
+            "S 550",
+            "S 550 Long",
+            "S 600",
+            "S 63 Amg",
+            "Sl 55 Amg",
+            "Slk 32 Amg",
+            "Smart",
+            "Vito"
+        ],
+        "Universal": [
+            "200",
+            "208",
+            "B 180",
+            "C 180",
+            "C 200",
+            "C 200 2.0",
+            "C 220",
+            "C 240",
+            "C 240 W203",
+            "C 280",
+            "C 320",
+            "E 220",
+            "E 240",
+            "E 300 Avantgarde-Ltd",
+            "Sprinter 311",
+            "Vaneo"
+        ]
+    },
+    "MERCURY": {
+        "Jeep": [
+            "Mariner",
+            "Mariner Hybrid"
+        ],
+        "Sedan": [
+            "Cougar"
+        ]
+    },
+    "MINI": {
+        "Cabriolet": [
+            "Cooper"
+        ],
+        "Coupe": [
+            "Cooper",
+            "Cooper Clubman",
+            "Cooper F-56",
+            "Cooper R50",
+            "Cooper S Cabrio R56"
+        ],
+        "Hatchback": [
+            "Cooper",
+            "Cooper S",
+            "Cooper S Cabrio",
+            "Countryman",
+            "Countryman S",
+            "Countryman S Turbo",
+            "Countryman Sport",
+            "One"
+        ],
+        "Jeep": [
+            "Countryman",
+            "Countryman S",
+            "Paceman"
+        ],
+        "Sedan": [
+            "Cooper",
+            "Countryman"
+        ],
+        "Universal": [
+            "Cooper"
+        ]
+    },
+    "MITSUBISHI": {
+        "Cabriolet": [
+            "Eclipse"
+        ],
+        "Coupe": [
+            "Eclipse",
+            "Montero Sport"
+        ],
+        "Goods Wagon": [
+            "Chariot",
+            "Minica"
+        ],
+        "Hatchback": [
+            "Carisma",
+            "Colt",
+            "Colt Lancer",
+            "Coltplus",
+            "Coltplus Plus",
+            "I",
+            "Lancer Gt",
+            "Mirage",
+            "Rvr",
+            "Space Runner"
+        ],
+        "Jeep": [
+            "Airtrek",
+            "Airtrek Turbo",
+            "Delica",
+            "Eclipse Es",
+            "Grandis",
+            "L 200",
+            "Montero",
+            "Montero Sport",
+            "Outlander",
+            "Outlander 2.0",
+            "Outlander Se",
+            "Outlander Sport",
+            "Outlander Xl",
+            "Pajero",
+            "Pajero 2.5Diezel",
+            "Pajero Io",
+            "Pajero Mini",
+            "Pajero Mini 2008",
+            "Pajero Mini 2010",
+            "Pajero Montero",
+            "Pajero Sport"
+        ],
+        "Minivan": [
+            "Chariot",
+            "Delica",
+            "Delica 5",
+            "Grandis"
+        ],
+        "Pickup": [
+            "L 200",
+            "Minica"
+        ],
+        "Sedan": [
+            "Carisma",
+            "Colt",
+            "Galant",
+            "Galant Gts",
+            "Lancer",
+            "Lancer Gts",
+            "Mirage",
+            "Outlander"
+        ],
+        "Universal": [
+            "Airtrek",
+            "Colt",
+            "Lancer",
+            "Outlander"
+        ]
+    },
+    "MOSKVICH": {
+        "Goods Wagon": [
+            "2140"
+        ],
+        "Hatchback": [
+            "400",
+            "401"
+        ],
+        "Sedan": [
+            "2140"
+        ]
+    },
+    "NISSAN": {
+        "Coupe": [
+            "370Z",
+            "Micra",
+            "Silvia",
+            "Skyline"
+        ],
+        "Goods Wagon": [
+            "Serena",
+            "Vanette",
+            "Wingroad"
+        ],
+        "Hatchback": [
+            "Almera",
+            "Almera Dci",
+            "Juke",
+            "March",
+            "March Rafeet",
+            "Micra",
+            "Note",
+            "Rasheen",
+            "Tiida",
+            "Tiida 15 M",
+            "Tiida Axis",
+            "Versa",
+            "Versa S"
+        ],
+        "Jeep": [
+            "Altima",
+            "Armada",
+            "Juke",
+            "Juke Juke",
+            "Juke Nismo",
+            "Juke Nismo Rs",
+            "Juke Turbo",
+            "Kicks",
+            "Kicks Sr",
+            "Leaf",
+            "Murano",
+            "Pathfinder",
+            "Pathfinder Se",
+            "Patrol",
+            "Patrol Y60",
+            "Qashqai Advance Cvt",
+            "Qashqai Sport",
+            "Rogue",
+            "Rogue Sl",
+            "Rogue Sport",
+            "Terrano",
+            "Versa",
+            "X-Terra",
+            "X-Trail",
+            "X-Trail Gt",
+            "X-Trail Nismo",
+            "X-Trail Nissan X Trail R",
+            "X-Trail X-Trail"
+        ],
+        "Minivan": [
+            "Elgrand",
+            "Lafesta",
+            "March",
+            "Presage",
+            "Presage Rider",
+            "Quest",
+            "Quest 2016",
+            "Serena",
+            "Serena Serea",
+            "Vanette"
+        ],
+        "Pickup": [
+            "Navara",
+            "X-Trail"
+        ],
+        "Sedan": [
+            "100 Nx",
+            "Almera",
+            "Altima",
+            "Bluebird",
+            "Cefiro",
+            "Frontier",
+            "Fuga",
+            "Gloria",
+            "Juke",
+            "Latio",
+            "March",
+            "March 231212",
+            "Maxima",
+            "Micra",
+            "Micra Diesel",
+            "Moco",
+            "Murano",
+            "Note",
+            "Pathfinder",
+            "Primera",
+            "Rogue",
+            "Sentra",
+            "Skyline",
+            "Skyline 4Wd",
+            "Skyline Gt250",
+            "Teana",
+            "Tiida",
+            "Tiida 2008",
+            "Tiida Latio",
+            "Versa",
+            "Versa Se",
+            "X-Terra"
+        ],
+        "Universal": [
+            "Juke",
+            "Wingroad",
+            "X-Trail"
+        ]
+    },
+    "OPEL": {
+        "Cabriolet": [
+            "Astra"
+        ],
+        "Coupe": [
+            "Astra",
+            "Astra Bertone",
+            "Astra H",
+            "Corsa",
+            "Tigra"
+        ],
+        "Goods Wagon": [
+            "Astra",
+            "Astra A.H",
+            "Astra Astra",
+            "Astra G",
+            "Astra Gi",
+            "Astra H",
+            "Combo",
+            "Combo 1700",
+            "Combo 2001",
+            "Combo Tdi",
+            "Corsa",
+            "Omega 1",
+            "Vectra",
+            "Vectra 1.6",
+            "Zafira"
+        ],
+        "Hatchback": [
+            "Agila",
+            "Astra",
+            "Astra G",
+            "Astra Gtc 1.9 Turbo Dies",
+            "Astra H",
+            "Astra Suzuki Mr Wagon",
+            "Corsa",
+            "Corsa Corsa",
+            "Meriva",
+            "Vectra",
+            "Vectra B",
+            "Vectra C"
+        ],
+        "Jeep": [
+            "Crossland X",
+            "Frontera",
+            "Frontera A B",
+            "Meriva",
+            "Monterey",
+            "Vectra"
+        ],
+        "Minivan": [
+            "Meriva",
+            "Sintra",
+            "Zafira",
+            "Zafira B"
+        ],
+        "Sedan": [
+            "Agila",
+            "Astra",
+            "Astra 1600",
+            "Astra G",
+            "Astra Ge",
+            "Astra H",
+            "Astra J",
+            "Combo",
+            "Corsa",
+            "Insignia",
+            "Omega",
+            "Omega B",
+            "Omega C",
+            "Vectra",
+            "Vectra B",
+            "Vectra C",
+            "Vectra H"
+        ],
+        "Universal": [
+            "Astra",
+            "Astra Cng",
+            "Astra G",
+            "Astra H",
+            "Astra Td",
+            "Combo",
+            "Meriva",
+            "Omega",
+            "Vectra",
+            "Vectra B",
+            "Vectra C",
+            "Zafira"
+        ]
+    },
+    "PEUGEOT": {
+        "Cabriolet": [
+            "207"
+        ],
+        "Hatchback": [
+            "206",
+            "206 Cc",
+            "207",
+            "3008",
+            "307"
+        ],
+        "Jeep": [
+            "3008 2.0"
+        ],
+        "Minivan": [
+            "807"
+        ],
+        "Sedan": [
+            "206",
+            "406",
+            "407",
+            "508",
+            "607"
+        ]
+    },
+    "PONTIAC": {
+        "Sedan": [
+            "G6"
+        ]
+    },
+    "PORSCHE": {
+        "Coupe": [
+            "911",
+            "911 Meqanika"
+        ],
+        "Hatchback": [
+            "Panamera"
+        ],
+        "Jeep": [
+            "Cayenne",
+            "Cayenne S",
+            "Cayman",
+            "Macan",
+            "Macan S"
+        ],
+        "Sedan": [
+            "Cayenne",
+            "Macan",
+            "Panamera",
+            "Panamera 4",
+            "Panamera Gts",
+            "Panamera S"
+        ]
+    },
+    "RENAULT": {
+        "Coupe": [
+            "Megane 19"
+        ],
+        "Goods Wagon": [
+            "Kangoo",
+            "Kangoo Waggon",
+            "Megane"
+        ],
+        "Hatchback": [
+            "Clio",
+            "Laguna",
+            "Megane",
+            "Twingo"
+        ],
+        "Jeep": [
+            "Captur Qm3 Samsung",
+            "Duster"
+        ],
+        "Minivan": [
+            "Scenic"
+        ],
+        "Sedan": [
+            "Laguna",
+            "Megane 1.5Cdi",
+            "Megane 1.9 Cdi",
+            "Megane 1.9Cdi",
+            "Megane 5"
+        ],
+        "Universal": [
+            "Clio",
+            "Laguna",
+            "Megane",
+            "Megane Gt Line",
+            "Scenic"
+        ]
+    },
+    "ROLLS-ROYCE": {
+        "Cabriolet": [
+            "Phantom"
+        ],
+        "Limousine": [
+            "Phantom"
+        ]
+    },
+    "ROVER": {
+        "Coupe": [
+            "200"
+        ],
+        "Sedan": [
+            "216",
+            "416"
+        ]
+    },
+    "SAAB": {
+        "Sedan": [
+            "9-3"
+        ]
+    },
+    "SATURN": {
+        "Jeep": [
+            "Vue"
+        ]
+    },
+    "SCION": {
+        "Coupe": [
+            "Tc"
+        ],
+        "Hatchback": [
+            "Ia Isti",
+            "Xd"
+        ]
+    },
+    "SEAT": {
+        "Hatchback": [
+            "Ibiza",
+            "Leon"
+        ]
+    },
+    "SKODA": {
+        "Hatchback": [
+            "Fabia",
+            "Octavia"
+        ],
+        "Sedan": [
+            "Fabia",
+            "Octavia",
+            "Octavia Scout",
+            "Superb"
+        ],
+        "Universal": [
+            "Octavia",
+            "Octavia Scout"
+        ]
+    },
+    "SSANGYONG": {
+        "Jeep": [
+            "Actyon",
+            "Korando",
+            "Kyron",
+            "Rexton",
+            "Rexton Super"
+        ],
+        "Minivan": [
+            "Actyon"
+        ],
+        "Pickup": [
+            "Korando"
+        ],
+        "Sedan": [
+            "Actyon"
+        ],
+        "Universal": [
+            "Korando"
+        ]
+    },
+    "SUBARU": {
+        "Coupe": [
+            "Brz"
+        ],
+        "Goods Wagon": [
+            "Forester",
+            "Legacy",
+            "Outback"
+        ],
+        "Hatchback": [
+            "Crosstrek",
+            "Forester",
+            "Forester Stb",
+            "Forester Xt",
+            "Impreza",
+            "Impreza Sport",
+            "Outback",
+            "Stella",
+            "Xv"
+        ],
+        "Jeep": [
+            "B9 Tribeca",
+            "Crosstrek",
+            "Forester",
+            "Forester 4X4",
+            "Forester L.L.Bean",
+            "Forester Sh",
+            "Outback",
+            "Outback Limited",
+            "Xv",
+            "Xv Hybrid",
+            "Xv Limited"
+        ],
+        "Pickup": [
+            "Sambar"
+        ],
+        "Sedan": [
+            "Crosstrek",
+            "Forester",
+            "Forester Cross Sport",
+            "Impreza",
+            "Impreza G4",
+            "Impreza Wrxsti Limited",
+            "Legacy",
+            "Legacy B4",
+            "Legacy Bl5",
+            "Outback",
+            "R2",
+            "Xv"
+        ],
+        "Universal": [
+            "Crosstrek",
+            "Forester",
+            "Forester Crosssport",
+            "Legacy",
+            "Legacy B4 Twin Turbo",
+            "Legacy Outback",
+            "Outback",
+            "Outback 2007",
+            "Outback 3.0"
+        ]
+    },
+    "SUZUKI": {
+        "Hatchback": [
+            "Aerio Sx",
+            "Alto Lapin",
+            "Hustler",
+            "Ignis",
+            "Swift",
+            "Swift Sport",
+            "Sx4"
+        ],
+        "Jeep": [
+            "Escudo",
+            "Grand Vitara",
+            "Jimny",
+            "Jimny Glx",
+            "Samurai",
+            "Sj 413 Samurai",
+            "Sx4",
+            "Vitara",
+            "Vitara Gl",
+            "Xl7",
+            "Xl7 Limited"
+        ],
+        "Minivan": [
+            "Every Landy Nissan Seren"
+        ],
+        "Sedan": [
+            "Kizashi",
+            "Kizashi Sporti",
+            "Swift",
+            "Sx4"
+        ],
+        "Universal": [
+            "Cervo",
+            "Liana"
+        ]
+    },
+    "TESLA": {
+        "Sedan": [
+            "Model X"
+        ]
+    },
+    "TOYOTA": {
+        "Coupe": [
+            "Camry",
+            "Celica",
+            "Chr",
+            "Highlander",
+            "Prius",
+            "Tundra",
+            "Vitz",
+            "Yaris"
+        ],
+        "Hatchback": [
+            "Aqua",
+            "Aqua G",
+            "Aqua G Klas",
+            "Aqua G Soft Leather Sele",
+            "Aqua Hibrid",
+            "Aqua L Paketi",
+            "Aqua S",
+            "Aqua Sport",
+            "Auris",
+            "Corolla",
+            "Corolla Im",
+            "Corolla Spacio",
+            "Fun Cargo",
+            "Ist",
+            "Ist 1.5",
+            "Matrix Xr",
+            "Passo",
+            "Prius",
+            "Prius 1.8",
+            "Prius 11",
+            "Prius 9",
+            "Prius Blug-In",
+            "Prius C",
+            "Prius C 2013",
+            "Prius C 80 Original",
+            "Prius C Aqua",
+            "Prius C Hybrid",
+            "Prius C Navigation",
+            "Prius Personna",
+            "Prius Plagin",
+            "Prius Plug In",
+            "Prius Plug-In",
+            "Prius Plugin",
+            "Prius Prius",
+            "Prius S",
+            "Prius Tss Limited",
+            "Prius V",
+            "Prius V Alpina",
+            "Prius V Hybrid",
+            "Ractis",
+            "Rav 4",
+            "Sai",
+            "Vitz",
+            "Vitz I.Ll",
+            "Vitz Rs",
+            "Will Chypa",
+            "Will Vs",
+            "Yaris",
+            "Yaris Rs",
+            "Yaris Se"
+        ],
+        "Jeep": [
+            "4Runner",
+            "4Runner Limited",
+            "Cami",
+            "Camry",
+            "Century",
+            "Chr",
+            "Chr Limited",
+            "Fj Cruiser",
+            "Fortuner",
+            "Harrier",
+            "Highlander",
+            "Highlander 2.4 Lit",
+            "Highlander 24",
+            "Highlander Limited",
+            "Highlander Sport",
+            "Highlander Xle",
+            "Hilux",
+            "Hilux Surf",
+            "Land Cruiser",
+            "Land Cruiser 100",
+            "Land Cruiser 105",
+            "Land Cruiser 11",
+            "Land Cruiser 200",
+            "Land Cruiser 80",
+            "Land Cruiser Prado",
+            "Land Cruiser Prado Rx",
+            "Prius",
+            "Rav 4",
+            "Rav 4 Dizel",
+            "Rav 4 L",
+            "Rav 4 Le",
+            "Rav 4 Limited",
+            "Rav 4 S P O R T",
+            "Rav 4 Se",
+            "Rav 4 Sport",
+            "Rav 4 Super",
+            "Rav 4 Xle",
+            "Rav 4 Xle Sport",
+            "Sequoia",
+            "Tacoma",
+            "Tundra",
+            "Venza"
+        ],
+        "Microbus": [
+            "Hiace"
+        ],
+        "Minivan": [
+            "Alphard",
+            "Bb",
+            "Corolla",
+            "Corolla Verso",
+            "Estima",
+            "Grand Hiace",
+            "Ipsum",
+            "Ipsum S",
+            "Isis",
+            "Noah",
+            "Prius V",
+            "Sienna",
+            "Sienta",
+            "Sienta Le",
+            "Verso",
+            "Voxy",
+            "Voxy 2003",
+            "Wish"
+        ],
+        "Pickup": [
+            "Hilux",
+            "Tacoma",
+            "Tacoma Trd Off Road",
+            "Tundra"
+        ],
+        "Sedan": [
+            "4Runner",
+            "Altezza",
+            "Aqua",
+            "Aqua S",
+            "Avalon",
+            "Avalon Limited",
+            "Avensis",
+            "Belta",
+            "Caldina",
+            "Camry",
+            "Camry Hybrid",
+            "Camry Le",
+            "Camry S",
+            "Camry Se",
+            "Camry Se Hibryd",
+            "Camry Sel",
+            "Camry Sport",
+            "Camry Sport Paket",
+            "Camry Sport Se",
+            "Camry Sporti",
+            "Camry Xle",
+            "Camry Xlei",
+            "Camry Xse",
+            "Camry Xv50",
+            "Corolla",
+            "Corolla 04",
+            "Corolla 140",
+            "Corolla Eco",
+            "Corolla Le",
+            "Corolla S",
+            "Corolla Se",
+            "Highlander",
+            "Ipsum",
+            "Ist",
+            "Mark X",
+            "Mark X Zio",
+            "Prius",
+            "Prius 1.5I",
+            "Prius 2014",
+            "Prius 3",
+            "Prius C",
+            "Prius C 1.5I",
+            "Prius C Yaris Ia",
+            "Prius Plug In",
+            "Prius Prius",
+            "Prius S",
+            "Prius V",
+            "Prius V Hibrid",
+            "Ractis",
+            "Rav 4",
+            "Sienna",
+            "Sienta",
+            "Tacoma",
+            "Tundra",
+            "Vitz",
+            "Vitz Rs",
+            "Yaris",
+            "Yaris Ia"
+        ],
+        "Universal": [
+            "Aqua",
+            "Caldina",
+            "Corolla",
+            "Fun Cargo",
+            "Prius",
+            "Prius C",
+            "Prius V",
+            "Vitz Funkargo"
+        ]
+    },
+    "UAZ": {
+        "Coupe": [
+            "31514"
+        ],
+        "Jeep": [
+            "31514",
+            "Patriot"
+        ],
+        "Microbus": [
+            "31514",
+            "31514 Uaz"
+        ],
+        "Pickup": [
+            "31514"
+        ]
+    },
+    "VAZ": {
+        "Hatchback": [
+            "2109",
+            "2121 Niva"
+        ],
+        "Jeep": [
+            "2121 Niva"
+        ],
+        "Sedan": [
+            "1111",
+            "2101 01",
+            "2103 03",
+            "2105",
+            "2106",
+            "2107",
+            "2107 07",
+            "2109",
+            "2111",
+            "2121 Niva",
+            "Vesta"
+        ]
+    },
+    "VOLKSWAGEN": {
+        "Coupe": [
+            "Golf",
+            "Lupo Iaponuri",
+            "New Beetle"
+        ],
+        "Goods Wagon": [
+            "Caddy",
+            "Caddy Cadi",
+            "Crafter",
+            "Golf 3",
+            "Passat"
+        ],
+        "Hatchback": [
+            "Golf",
+            "Golf 1.8",
+            "Golf 2",
+            "Golf 3",
+            "Golf 4",
+            "Golf 6",
+            "Golf Golf 5",
+            "Golf Gti",
+            "Golf Tdi",
+            "Gti",
+            "Lupo",
+            "Passat",
+            "Polo",
+            "Polo Gti 16V",
+            "T3",
+            "Up"
+        ],
+        "Jeep": [
+            "Tiguan",
+            "Tiguan Se",
+            "Touareg"
+        ],
+        "Microbus": [
+            "Crafter",
+            "Crafter 2.5 Tdi",
+            "Crafter 25Tdi",
+            "T3 0000"
+        ],
+        "Minivan": [
+            "Routan Sel",
+            "Sharan",
+            "T5",
+            "Touran",
+            "Transporter"
+        ],
+        "Pickup": [
+            "Caddy"
+        ],
+        "Sedan": [
+            "15001600 Schtufenheck",
+            "Bora",
+            "Cc",
+            "Cc 2.0 T",
+            "Cc R Line",
+            "Cc Sport",
+            "Eos",
+            "Golf",
+            "Golf 3",
+            "Golf 4",
+            "Golf Gti",
+            "Golf Tdi",
+            "Jetta",
+            "Jetta 1.4 Turbo",
+            "Jetta 2",
+            "Jetta 2.0",
+            "Jetta Gli",
+            "Jetta Hybrid",
+            "Jetta S",
+            "Jetta Se",
+            "Jetta Sei",
+            "Jetta Sel",
+            "Jetta Sport",
+            "Jetta Tdi",
+            "New Beetle",
+            "Passat",
+            "Passat 2.0 Tfsi",
+            "Passat B5",
+            "Passat B7",
+            "Passat Pasat",
+            "Passat R-Line",
+            "Passat Rlaini",
+            "Passat Se",
+            "Passat Sel",
+            "Passat Sport",
+            "Passat Tdi Sel",
+            "Passat Tsi-Se",
+            "Phaeton",
+            "Polo",
+            "Scirocco",
+            "Tiguan",
+            "Vento"
+        ],
+        "Universal": [
+            "Caddy",
+            "Golf",
+            "Golf 4",
+            "Jetta"
+        ]
+    },
+    "VOLVO": {
+        "Coupe": [
+            "C30 2010",
+            "C70"
+        ],
+        "Goods Wagon": [
+            "V50"
+        ],
+        "Jeep": [
+            "Xc90",
+            "Xc90 2.5Turbo",
+            "Xc90 3.2 Awd"
+        ],
+        "Sedan": [
+            "940",
+            "960",
+            "S40",
+            "S60",
+            "S70",
+            "S80"
+        ]
+    },
+    "ZAZ": {
+        "Coupe": [
+            "969 968M"
+        ],
+        "Jeep": [
+            "969 Luaz"
+        ]
+    },
+    "\u10e1\u10ee\u10d5\u10d0": {
+        "Jeep": [
+            "Gonow"
+        ],
+        "Microbus": [
+            "Iveco Dayly"
+        ]
+    }
+}
