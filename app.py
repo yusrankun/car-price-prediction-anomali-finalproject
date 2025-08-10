@@ -112,32 +112,32 @@ def run_car_price_app():
     st.subheader("Masukkan Detail Mobil")
     user_input = {}
 
-    # Manufacturer dengan validasi tidak boleh kosong
+    # Manufacturer dengan validasi
     manufacturers = ["-- Pilih Manufacturer --"] + sorted(list(manu_cat_model_map.keys()))
     chosen_manufacturer = st.selectbox("Manufacturer", manufacturers)
 
     if chosen_manufacturer == "-- Pilih Manufacturer --":
-        st.warning("⚠️ Silakan pilih Manufacturer terlebih dahulu sebelum melanjutkan.")
-        return  # Hentikan proses jika belum dipilih
+        st.warning("⚠️ Silakan pilih Manufacturer terlebih dahulu untuk melanjutkan.")
+        return  # Stop sampai user memilih Manufacturer
 
     chosen_manufacturer_upper = chosen_manufacturer.upper()
     user_input["Manufacturer"] = chosen_manufacturer
-    
+
     # Category
     categories = sorted(list(manu_cat_model_map[chosen_manufacturer].keys()))
     chosen_category = st.selectbox("Category", categories)
     user_input["Category"] = chosen_category
-    
+
     # Model
     models = sorted(manu_cat_model_map[chosen_manufacturer][chosen_category])
     selected_model = st.selectbox("Model", models)
     selected_model_upper = selected_model.upper()
     user_input["Model"] = selected_model
-    
+
     # Model encoding
     user_input["Model_encoded"] = model_price_mean.get(selected_model, 0)
-                                                                                                                        
-    # ===== Premium Detection (case-insensitive) =====
+
+    # ===== Premium Detection =====
     if chosen_manufacturer_upper in PREMIUM_BRANDS:
         user_input["is_premium"] = 1
     else:
