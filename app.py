@@ -31,10 +31,14 @@ DOORS_CATEGORY_OPTIONS = [
     '4-5', '2-3', '>5'
 ]
 
+# Semua huruf besar biar konsisten
 PREMIUM_BRANDS = [
     'BMW', 'MERCEDES-BENZ', 'AUDI', 'LEXUS',
     'BENTLEY', 'FERRARI', 'LAMBORGHINI', 'MASERATI', 'PORSCHE'
 ]
+
+# Daftar model yang manufacturer-nya dipaksa jadi Unknown
+FORCE_UNKNOWN_MODELS = ["GONOW", "IVECO DAYLY"]
 
 # ===== Load Model & Mapping =====
 model = joblib.load('best_model_LightGBM.pkl')
@@ -59,6 +63,7 @@ df_premium = pd.read_csv('premium_models_summary.csv')
 df_non_premium = pd.read_csv('non_premium_models_summary.csv')
 df_all = pd.concat([df_premium, df_non_premium], ignore_index=True)
 
+# Normalisasi model ke uppercase untuk konsistensi
 premium_map = dict(zip(df_all['Model'].str.upper(), df_all['is_premium']))
 
 # ===== Halaman Home =====
@@ -110,38 +115,33 @@ def run_car_price_app():
     st.subheader("Masukkan Detail Mobil")
     user_input = {}
 
-    # Manufacturer dengan validasi awal
-    manufacturers = ["-- Pilih Manufacturer --"] + sorted(list(manu_cat_model_map.keys()))
+    # Manufacturer
+    manufacturers = sorted(list(manu_cat_model_map.keys()))
     chosen_manufacturer = st.selectbox("Manufacturer", manufacturers)
-
-    if chosen_manufacturer == "-- Pilih Manufacturer --":
-        st.warning("⚠️ Silakan pilih Manufacturer terlebih dahulu.")
-        return
-
     chosen_manufacturer_upper = chosen_manufacturer.upper()
     user_input["Manufacturer"] = chosen_manufacturer
-
+    
     # Category
     categories = sorted(list(manu_cat_model_map[chosen_manufacturer].keys()))
     chosen_category = st.selectbox("Category", categories)
     user_input["Category"] = chosen_category
-
+    
     # Model
     models = sorted(manu_cat_model_map[chosen_manufacturer][chosen_category])
     selected_model = st.selectbox("Model", models)
     selected_model_upper = selected_model.upper()
     user_input["Model"] = selected_model
 
-    # Jika model = GONOW, manufacturer jadi Unknown
-    if selected_model_upper == "GONOW":
+    # 🔹 Jika model ada di FORCE_UNKNOWN_MODELS, paksa manufacturer jadi Unknown
+    if selected_model_upper in FORCE_UNKNOWN_MODELS:
         chosen_manufacturer = "Unknown"
         chosen_manufacturer_upper = "UNKNOWN"
         user_input["Manufacturer"] = "Unknown"
-
+    
     # Model encoding
     user_input["Model_encoded"] = model_price_mean.get(selected_model, 0)
-
-    # Premium Detection
+                                                                                                                        
+    # ===== Premium Detection (case-insensitive) =====
     if chosen_manufacturer_upper in PREMIUM_BRANDS:
         user_input["is_premium"] = 1
     else:
