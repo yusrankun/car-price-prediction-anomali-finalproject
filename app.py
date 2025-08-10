@@ -43,6 +43,10 @@ model = joblib.load('best_model_LightGBM.pkl')
 with open("manufacturer_category_model.json", "r") as f:
     manu_cat_model_map = json.load(f)
 
+# 🔹 Ganti manufacturer “áƒ¡áƒ®áƒ•áƒ” menjadi "Unknown" di mapping JSON
+if 'áƒ¡áƒ®áƒ•áƒ' in manu_cat_model_map:
+    manu_cat_model_map['Unknown'] = manu_cat_model_map.pop('áƒ¡áƒ®áƒ•áƒ')
+
 with open("model_price_mean.json", "r") as f:
     model_price_mean = pd.Series(json.load(f))
 
@@ -59,6 +63,9 @@ else:
 df_premium = pd.read_csv('premium_models_summary.csv')
 df_non_premium = pd.read_csv('non_premium_models_summary.csv')
 df_all = pd.concat([df_premium, df_non_premium], ignore_index=True)
+
+# 🔹 Ganti “áƒ¡áƒ®áƒ•áƒ” menjadi "Unknown" di DataFrame
+df_all['Manufacturer'] = df_all['Manufacturer'].replace('áƒ¡áƒ®áƒ•áƒ', 'Unknown')
 
 # Normalisasi model ke uppercase untuk konsistensi
 premium_map = dict(zip(df_all['Model'].str.upper(), df_all['is_premium']))
@@ -116,9 +123,13 @@ def run_car_price_app():
     manufacturers = ["-- Pilih Manufacturer --"] + sorted(list(manu_cat_model_map.keys()))
     chosen_manufacturer = st.selectbox("Manufacturer", manufacturers)
 
+    # 🔹 Jika user pilih “áƒ¡áƒ®áƒ•áƒ” → ubah ke "Unknown"
+    if chosen_manufacturer == 'áƒ¡áƒ®áƒ•áƒ':
+        chosen_manufacturer = 'Unknown'
+
     if chosen_manufacturer == "-- Pilih Manufacturer --":
         st.warning("⚠️ Silakan pilih Manufacturer terlebih dahulu untuk melanjutkan.")
-        return  # Stop sampai user memilih Manufacturer
+        return
 
     chosen_manufacturer_upper = chosen_manufacturer.upper()
     user_input["Manufacturer"] = chosen_manufacturer
@@ -137,7 +148,7 @@ def run_car_price_app():
     # Model encoding
     user_input["Model_encoded"] = model_price_mean.get(selected_model, 0)
 
-    # ===== Premium Detection =====
+    # Premium Detection
     if chosen_manufacturer_upper in PREMIUM_BRANDS:
         user_input["is_premium"] = 1
     else:
